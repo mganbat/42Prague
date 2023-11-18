@@ -6,7 +6,7 @@
 /*   By: mganbat <mganbat@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/18 22:24:26 by mganbat           #+#    #+#             */
-/*   Updated: 2023/11/18 22:42:40 by mganbat          ###   ########.fr       */
+/*   Updated: 2023/11/18 22:55:44 by mganbat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	ft_atoi(const char *nptr)
 {
 	long long int	n;
 	long long int	check;
-	int		sign;
+	int				sign;
 
 	n = 0;
 	sign = 1;

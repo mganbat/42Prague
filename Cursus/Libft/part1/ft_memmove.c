@@ -6,7 +6,7 @@
 /*   By: mganbat <mganbat@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/18 20:29:12 by mganbat           #+#    #+#             */
-/*   Updated: 2023/11/18 21:51:50 by mganbat          ###   ########.fr       */
+/*   Updated: 2023/11/18 22:59:59 by mganbat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,8 @@ void	ft_memmove(void *dest, const void *src, size_t n)
 
 	t_d = dest;
 	t_s = src;
-
 	if (dest == NULL || src == NULL)
-		return NULL;
+		return (NULL);
 	if (t_d == t_s || n == 0)
 		return (dest);
 	if (t_d < t_s)

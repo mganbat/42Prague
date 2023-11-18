@@ -6,7 +6,7 @@
 /*   By: mganbat <mganbat@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/18 20:04:46 by mganbat           #+#    #+#             */
-/*   Updated: 2023/11/18 20:12:03 by mganbat          ###   ########.fr       */
+/*   Updated: 2023/11/18 22:58:51 by mganbat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	unsigned char *t;
+	unsigned char	*t;
 
 	t = s;
 	while (n--)

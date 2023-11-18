@@ -6,11 +6,11 @@
 /*   By: mganbat <mganbat@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/18 22:12:02 by mganbat           #+#    #+#             */
-/*   Updated: 2023/11/18 22:42:56 by mganbat          ###   ########.fr       */
+/*   Updated: 2023/11/18 23:00:37 by mganbat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>q
+#include <string.h>
 
 char	*ft_strrchr(const char *str, int c)
 {
