@@ -6,7 +6,7 @@
 /*   By: mganbat <mganbat@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/18 22:24:26 by mganbat           #+#    #+#             */
-/*   Updated: 2023/11/21 17:56:21 by mganbat          ###   ########.fr       */
+/*   Updated: 2023/11/24 11:33:33 by mganbat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_atoi(const char *nptr)
 
 	n = 0;
 	sign = 1;
-	while (*nptr && (*nptr >= 9 && *nptr <= 13) || (*nptr == 32))
+	while ((*nptr && *nptr >= 9 && *nptr <= 13) || (*nptr == 32))
 		nptr++;
 	if (*nptr == 45 || *nptr == 43)
 	{

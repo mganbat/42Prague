@@ -6,11 +6,11 @@
 /*   By: mganbat <mganbat@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 10:35:32 by mganbat           #+#    #+#             */
-/*   Updated: 2023/11/21 17:55:58 by mganbat          ###   ########.fr       */
+/*   Updated: 2023/11/24 11:35:13 by mganbat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

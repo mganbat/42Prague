@@ -6,11 +6,11 @@
 /*   By: mganbat <mganbat@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/18 19:13:45 by mganbat           #+#    #+#             */
-/*   Updated: 2023/11/21 17:57:39 by mganbat          ###   ########.fr       */
+/*   Updated: 2023/11/24 11:18:20 by mganbat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
 size_t	ft_strlen(const char *s)
 {

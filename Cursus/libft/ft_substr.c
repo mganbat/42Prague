@@ -6,11 +6,11 @@
 /*   By: mganbat <mganbat@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/18 23:05:16 by mganbat           #+#    #+#             */
-/*   Updated: 2023/11/21 17:55:50 by mganbat          ###   ########.fr       */
+/*   Updated: 2023/11/24 11:34:48 by mganbat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

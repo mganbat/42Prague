@@ -6,21 +6,22 @@
 /*   By: mganbat <mganbat@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/18 22:14:27 by mganbat           #+#    #+#             */
-/*   Updated: 2023/11/21 17:57:22 by mganbat          ###   ########.fr       */
+/*   Updated: 2023/11/24 11:28:15 by mganbat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *str, int c)
+char	*ft_strchr(const char *s, int c)
 {
-	char	chr;
+	char	*chr;
 
-	chr = (char)c;
-	while (*str != '\0' && *str != chr)
-		str++;
-	if (*str == chr)
-		return (str);
-	else
-		return (NULL);
+	chr = (char *)s;
+	while (*chr != c)
+	{
+		if (!*chr)
+			return (NULL);
+		chr++;
+	}
+	return (chr);
 }

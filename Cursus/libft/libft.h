@@ -5,6 +5,14 @@
 # include <stdlib.h>
 # include <string.h>
 
+/* ************** STRUCT *************** */
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}	t_list;
+
 /* ************** PART 1 *************** */
 
 int		ft_isalpha(int c);
@@ -56,13 +64,5 @@ t_list	*ft_lstlast(t_list *lst);
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 t_list	*ft_lstnew(void *content);
 int		ft_lstsize(t_list *lst);
-
-/* ************** STRUCT *************** */
-
-typedef struct s_list
-{
-	void			*content;
-	struct s_list	*next;
-}	t_list;
 
 #endif

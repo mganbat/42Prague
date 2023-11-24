@@ -6,11 +6,11 @@
 /*   By: mganbat <mganbat@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/23 20:50:49 by mganbat           #+#    #+#             */
-/*   Updated: 2023/11/23 20:54:18 by mganbat          ###   ########.fr       */
+/*   Updated: 2023/11/24 11:37:10 by mganbat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int	ft_lstsize(t_list *lst)
 {

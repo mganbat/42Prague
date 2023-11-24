@@ -6,11 +6,11 @@
 /*   By: mganbat <mganbat@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 16:22:12 by mganbat           #+#    #+#             */
-/*   Updated: 2023/11/23 17:35:43 by mganbat          ###   ########.fr       */
+/*   Updated: 2023/11/24 11:35:41 by mganbat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
 static int	ft_wordcount(char const *s, char c)
 {
