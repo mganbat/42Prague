@@ -6,7 +6,7 @@
 /*   By: mganbat <mganbat@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/18 20:29:12 by mganbat           #+#    #+#             */
-/*   Updated: 2023/11/24 11:22:24 by mganbat          ###   ########.fr       */
+/*   Updated: 2023/11/24 11:44:57 by mganbat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	unsigned char	*t_d;
+	unsigned char		*t_d;
 	const unsigned char	*t_s;
 
 	t_d = (unsigned char *)dest;
