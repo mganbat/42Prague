@@ -6,7 +6,7 @@
 /*   By: mganbat <mganbat@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 10:50:58 by mganbat           #+#    #+#             */
-/*   Updated: 2023/11/24 11:34:57 by mganbat          ###   ########.fr       */
+/*   Updated: 2023/11/24 15:44:50 by mganbat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,28 +14,23 @@
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	size_t	i;
-	size_t	j;
-	char	*s2;
+	int		start;
+	int		end;
+	char	*str;
 
-	i = 0;
-	s2 = (char *)malloc(sizeof(char) * (ft_strlen(s1) + 1));
-	if (s2 == NULL)
+	if (!s1 || !set)
 		return (NULL);
-	ft_memcpy(s2, s1, ft_strlen(s1) + 1);
-	while (s2[i])
-	{
-		j = 0;
-		while (s2[i + j] == set[j])
-		{
-			if (set[j + 1] == '\0')
-			{
-				ft_memcpy(&s2[i], &s2[i + j + 1], ft_strlen(s1) - i);
-				i--;
-			}
-			j++;
-		}
-		i++;
-	}
-	return (s2);
+	start = 0;
+	end = ft_strlen(s1) - 1;
+	while (ft_strchr(set, s1[start]) && start <= end)
+		start++;
+	if (start > end)
+		return (ft_strdup(s1 + end + 1));
+	while (ft_strchr(set, s1[end]) && end >= 0)
+		end--;
+	str = malloc(end - start + 2);
+	if (!str)
+		return (NULL);
+	ft_strlcpy(str, &s1[start], end - start + 2);
+	return (str);
 }

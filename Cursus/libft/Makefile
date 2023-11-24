@@ -1,5 +1,5 @@
 NAME = libft.a
-CC = gcc
+CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
 SRCS = ft_isalpha.c \
@@ -60,6 +60,10 @@ bonus: $(OBJS) $(OBJS_BONUS)
 %.o: %.c
 	$(CC) $(CFLAGS) -c -o $@ $^
 	ar rcs $(NAME) $@ 
+
+so:
+	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRCS)
+	cc -nostartfiles -shared -o libft.so $(OBJS)
 
 clean:
 	rm -f $(OBJS) $(OBJS_BONUS)
