@@ -6,7 +6,7 @@
 /*   By: mganbat <mganbat@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/18 22:14:27 by mganbat           #+#    #+#             */
-/*   Updated: 2023/11/24 11:28:15 by mganbat          ###   ########.fr       */
+/*   Updated: 2023/11/25 16:35:18 by mganbat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,9 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	char	*chr;
-
-	chr = (char *)s;
-	while (*chr != c)
-	{
-		if (!*chr)
-			return (NULL);
-		chr++;
-	}
-	return (chr);
+	while (*s && *s != (char)c)
+		s++;
+	if (*s == (char)c)
+		return ((char *)s);
+	return (NULL);
 }

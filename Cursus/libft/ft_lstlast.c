@@ -6,7 +6,7 @@
 /*   By: mganbat <mganbat@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/23 20:54:59 by mganbat           #+#    #+#             */
-/*   Updated: 2023/11/24 11:37:21 by mganbat          ###   ########.fr       */
+/*   Updated: 2023/11/26 00:27:07 by mganbat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,9 @@
 
 t_list	*ft_lstlast(t_list *lst)
 {
-	t_list	*tmp;
-
-	if (lst == NULL)
+	if (!lst)
 		return (NULL);
-	tmp = lst;
-	while (tmp->next != NULL)
-		tmp = tmp->next;
-	return (tmp);
+	while (lst->next != NULL)
+		lst = lst->next;
+	return (lst);
 }
